@@ -33,7 +33,9 @@ public class Sorts {
      * Use: less(a[i], a[i - 1], field)
      */
     public static boolean isSorted(Task[] a, String field) {
-        // TODO
+        for (int i = a.length-1; i >= 0; i--){
+
+        }
         return false;
     }
 
