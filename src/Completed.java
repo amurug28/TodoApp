@@ -15,8 +15,8 @@ public class Completed implements Comparable<Completed> {
     public int compareTo(Completed other) {
         if (other == null)
             throw new NullPointerException();
-        if (!this.isDone() && other.isDone()) return 1;
-        if (this.isDone() && !other.isDone()) return -1;
+        if (!this.isDone() && other.isDone()) return -1;
+        if (this.isDone() && !other.isDone()) return 1;
         return 0;
     }
 

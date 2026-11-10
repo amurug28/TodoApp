@@ -34,8 +34,8 @@ public class Difficulty implements Comparable<Difficulty> {
     @Override
     public int compareTo(Difficulty other) {
         if (other == null) throw new NullPointerException();
-        if (this.rank() < other.rank()) return 1;
-        if (this.rank() > other.rank()) return -1;
+        if (this.rank() < other.rank()) return -1;
+        if (this.rank() > other.rank()) return 1;
         return 0;
     }
 
